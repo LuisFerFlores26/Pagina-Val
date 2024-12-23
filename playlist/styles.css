@@ -1,0 +1,103 @@
+
+body {
+    background-color: #c2bdbd;
+}
+
+
+.playlist-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.music-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.song-card {
+    background: rgb(223, 210, 210);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+}
+
+.song-image img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.song-info {
+    padding: 15px 0;
+}
+
+.song-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.song-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.song-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.song-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.song-links a:hover {
+    color: #ff4d4d;
+}
+
+.song-links2 {
+    display: outside;
+    gap: 15px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.song-links2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.song-links2 a:hover {
+    color: #ff4d4d;
+}
+
+.p1{
+    font-family: "Sylfaen", "Goudy Old Style","";;
+    font-size: 30px;
+    text-decoration: overline  red;;
+    color: #000000;
+
+}
+
+.p2{
+    font-family: "Palatino Linotype", "Goudy Old Style","";;
+    font-size: 24px;
+    color: #000000;
+
+}
+
+.song-description{
+    font-family: "Gabriola", "Goudy Old Style","";;
+    font-size: 18px;
+}

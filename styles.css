@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+nav {
+    background-color: #ff6b6b;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.corazon-animado {
+    font-size: 4em;
+    animation: latido 1.5s ease infinite;
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+} 
+
+.categoria-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.categoria-btn.activo {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.foto-item {
+    transition: all 0.3s ease;
+} 
+
+.foto-item[data-categoria="citas"] {
+    display: block;
+}
+
+/* Estilos del menú de cards */
+.menu-cards {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fff5f5, #ffe3e3);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.2);
+}
+
+.card-content i {
+    font-size: 2.5em;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilos de la sección inicio */
+#inicio {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #fff5f5, #ffe3e3);
+}
+
+#inicio h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.fecha {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-card {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .card-content i {
+        font-size: 2em;
+    }
+
+    .card-content h3 {
+        font-size: 1em;
+    }
+
+    #inicio h1 {
+        font-size: 2em;
+    }
+}
+
+/* Efectos hover adicionales */
+.nav-card:hover .card-content i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.nav-card:hover .card-content h3 {
+    color: #ff6b6b;
+    transition: color 0.3s ease;
+}
