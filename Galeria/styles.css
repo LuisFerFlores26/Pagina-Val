@@ -1,4 +1,7 @@
-/* Estilos para la galería */
+body{
+    background-color: rgb(238, 225, 229);
+}
+
 .galeria-container {
     padding: 2rem;
     max-width: 1200px;
@@ -107,6 +110,14 @@
     margin: 0;
     font-size: 1.2em;
     color: #333;
+}
+
+.t1{
+    font-family: "Sylfaen", "Goudy Old Style","";;
+    font-size: 30px;
+    text-decoration: overline  red;;
+    color: #000000;
+
 }
 
 .p1{
