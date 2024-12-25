@@ -11,36 +11,36 @@
     <nav class="menu-cards">
         <div class="card-container">
             <a href="#inicio" class="nav-card">
-                <div class="card-content">
-                    <i class="fas fa-home"></i>
+                <div class="card-content large-card">
+                    <i class="fas fa-home fa-2x"></i>
                     <h3>Inicio</h3>
                 </div>
             </a>
 
             <a href="Carta/carta.html" class="nav-card">
-                <div class="card-content">
-                    <i class="fas fa-envelope"></i>
+                <div class="card-content large-card">
+                    <i class="fas fa-envelope fa-2x"></i>
                     <h3>Carta</h3>
                 </div>
             </a>
-
-            <a href="#historia" class="nav-card">
+        <!-- Mini juego, coming soon :D 
+            <a href="#Minijuego" class="nav-card">
                 <div class="card-content">
                     <i class="fas fa-heart"></i>
                     <h3>Mini Juego</h3>
                 </div>
             </a>
-
+        -->
             <a href="Galeria/galeria.html" class="nav-card">
-                <div class="card-content">
-                    <i class="fas fa-images"></i>
+                <div class="card-content large-card">
+                    <i class="fas fa-images fa-2x"></i>
                     <h3>Galería</h3>
                 </div>
             </a>
 
             <a href="playlist/playlist.html" class="nav-card">
-                <div class="card-content">
-                    <i class="fas fa-music"></i>
+                <div class="card-content large-card">
+                    <i class="fas fa-music fa-2x"></i>
                     <h3>Música</h3>
                 </div>
             </a>
@@ -48,16 +48,29 @@
             
         </div>
         <section id="inicio" class="inicio-section">
-            <h1>Luis Fer & Vale</h1>
-            <p class="mensaje-especial">Porque algunas personas merecen algo especial...</p>
-            <div class="mensaje-personal">
-                <p>Esta página es para ti, Vale ♡</p>
-                <p>Navega por las diferentes secciones y descubre lo que hay en cada una</p>
+            <div class="welcome-animation">
+                <h1>Página de Vale</h1>
+                <p class="mensaje-especial"></p>
+                <button class="mensaje-secreto-btn">¿Un mensaje para ti?</button>
+                <div class="mensaje-oculto">
+                <p>✨ Feliz Navidad!! ✨</p>
+                </div>
             </div>
+            <div class="flores-container">
+                <div class="flor flor1"></div>
+                <div class="flor flor2"></div>
+                <div class="flor flor3"></div>
+            </div>
+            <!-- idk 
             <div class="corazon-animado">❤️</div>
+            -->
         </section>
+        <script>
+            document.querySelector('.mensaje-secreto-btn').addEventListener('click', function() {
+                document.querySelector('.mensaje-oculto').classList.toggle('visible');
+            });
+        </script>
     </nav>
-    
     
     
 </body>
