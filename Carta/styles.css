@@ -46,7 +46,7 @@
     opacity: 0;
     transition: all 0.3s;
     transform: translateY(20px);
-    display: none;
+    display: block;
 }
 
 .letter.visible {
